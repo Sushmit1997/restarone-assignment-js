@@ -1,0 +1,164 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0px;
+  display: block;
+  margin: 0px 0px;
+}
+
+.pageContainer {
+  display: flex;
+  height: 100%;
+}
+
+/* Side Nav Head */
+
+.sideNavHead {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sideNav {
+  padding: 0px;
+  color: #ffffff;
+  width: 18%;
+  height: 100%;
+  background-color: #311d40;
+}
+
+.userAvatarContent {
+  padding: 10 15px 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.userImage img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.userName {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+}
+
+.userName span:first-child {
+  font-size: 16px;
+  letter-spacing: 0.25px;
+}
+
+.userName span:last-child {
+  font-size: 12px;
+  margin-top: 5px;
+  letter-spacing: 1px;
+  font-weight: 50px;
+}
+
+.closeLogoDiv i {
+  font-size: 40px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Side Nav List */
+
+.navOptionsContainer {
+  margin-top: 20px;
+  height: fit-content;
+  background-color: #311d40;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navOption {
+  padding: 4px 8px 4px 8px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+
+.navOption:hover {
+  background-color: #53415f;
+  transition: 0.1s ease-in;
+  cursor: pointer;
+}
+
+.people {
+  background-color: #53415f;
+  font-weight: bold;
+  border-left: 2px solid #7484db;
+}
+.people .optionNumber {
+  margin-left: -2px;
+}
+
+.navOption:nth-child(2) i:last-child {
+  margin-left: auto;
+  font-size: 17px;
+}
+
+.navOption:first-child {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #432c53;
+  padding-bottom: 20px;
+}
+
+.navOption:nth-child(6) {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #432c53;
+  padding-bottom: 20px;
+}
+
+.navOption:nth-child(8) {
+  margin-left: 30px;
+}
+
+.navOption:nth-child(10) {
+  margin-left: 30px;
+}
+
+.navOption:nth-child(11) {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #432c53;
+  padding-bottom: 20px;
+}
+
+.navBottomText {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 30px;
+  font-family: "Poller One", cursive;
+  margin-top: calc(30% - 50px);
+}
+
+.optionNumber {
+  background-color: #c5cbea;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  margin-right: 10px;
+  color: #5262c0;
+  border-radius: 3px;
+  padding: 4px 0px 0px;
+}
+
+.logoAndName {
+  display: flex;
+  align-items: center;
+}
+
+.logoAndName i {
+  color: #948b9b;
+  font-size: 25px;
+  margin-right: 15px;
+}
+
+.logoAndName span {
+  color: #fefefe;
+}
