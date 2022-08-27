@@ -8,6 +8,7 @@ body {
 .pageContainer {
   display: flex;
   height: 100%;
+  width: 100%;
 }
 
 /* Side Nav Head */
@@ -161,4 +162,85 @@ body {
 
 .logoAndName span {
   color: #fefefe;
+}
+
+/* Main Section */
+
+.mainSection {
+  width: 90%;
+}
+
+/* Top bar */
+
+.topBar {
+  display: flex;
+  padding: 10px 0px 0px 10px;
+  height: 40px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topBar .peopleSection {
+  font-size: 18px;
+  color: #0b0c0c;
+  border-bottom: 3px solid #7484db;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  background-color: #eaf0f3;
+  padding: 5px 10px;
+  border-radius: 20px;
+  width: 50%;
+  height: 25px;
+}
+
+.searchBar input {
+  border: none;
+  background-color: #eaf0f3;
+  width: 100%;
+}
+
+.topBarActions {
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+.topBarActions ul {
+  display: flex;
+  list-style: none;
+}
+
+.topBarActions ul li {
+  font-size: 25px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.notificationBell {
+  position: relative;
+  margin-right: 15px !important;
+}
+
+.notificationCount {
+  position: absolute;
+  background-color: #b50814;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 10px;
+  left: 13px;
+  bottom: 14px;
+  color: #ffffff;
+}
+
+.userAlphabet {
+  font-size: 15px !important;
+  background-color: #311d40;
+  padding: 3px 5px;
+  color: #ffffff;
 }
