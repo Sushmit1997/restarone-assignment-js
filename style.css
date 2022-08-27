@@ -198,6 +198,7 @@ body {
   border-radius: 20px;
   width: 50%;
   height: 25px;
+  margin-bottom: 10px;
 }
 
 .searchBar input {
@@ -243,4 +244,70 @@ body {
   background-color: #311d40;
   padding: 3px 5px;
   color: #ffffff;
+}
+
+/* Table Top Bar */
+
+.tableTopBar {
+  padding: 10px 0px 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.allPeopleBox {
+  padding: 8px 12px;
+  border: 1px solid #948b9b;
+  border-radius: 8px;
+}
+
+.allPeopleSection {
+  display: flex;
+  align-items: center;
+}
+
+.addNew {
+  margin-left: 10px;
+  background-color: #0027e7;
+  border-radius: 20px;
+  padding: 8px 12px;
+  color: white;
+  font-size: 13px;
+}
+
+.addNew:hover {
+  background-color: #2c41b9;
+  cursor: pointer;
+  transition: 0.1s ease-in;
+}
+
+.tablefiltersSection ul {
+  padding-bottom: 10px;
+  list-style: none;
+  display: flex;
+  margin-right: 15px;
+}
+
+.tablefiltersSection ul li {
+  font-size: 25px;
+  color: #6a6e6f;
+  margin-left: 14px;
+  cursor: pointer;
+}
+
+.tablefiltersSection ul li:hover {
+  color: #432c53;
+  transition: 0.1s ease-in;
+}
+
+.tablefiltersSection ul li:last-child {
+  display: flex;
+  align-items: center;
+  font-size: 25;
+}
+
+.filterText {
+  font-size: 17px !important;
+  margin-left: 2px;
+  margin-bottom: 2px;
 }
