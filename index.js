@@ -1,5 +1,4 @@
 const onCloseArrowClick = () => {
-  //   document.querySelector(".rowDetailContainer").style.display = "none";
   $(".rowDetailContainer").animate({ width: "toggle" }, 300);
 };
 
@@ -15,15 +14,19 @@ function addRowHandlers() {
         var cell = row.getElementsByTagName("td")[1];
         var initialCell = row.getElementsByTagName("td")[0];
         var companyCell = row.getElementsByTagName("td")[2];
+        var workEmailCell = row.getElementsByTagName("td")[4];
 
         var initial = initialCell.innerText;
         var id = cell.innerHTML;
         var companyName = companyCell.innerText;
+        var workEmail = workEmailCell.innerText;
 
         document.querySelector(".userDetailName").innerHTML = id;
         document.querySelector(".userDetailNameTop").innerHTML = id;
         document.querySelector(".rowDetailUserInitials").innerHTML = initial;
         document.querySelector(".userDetailCompanyTop").innerHTML = companyName;
+        document.querySelector(".userDetailCompany").innerHTML = companyName;
+        document.querySelector(".userDetailPhone").innerHTML = workEmail;
 
         $(".rowDetailContainer").css("display", "block");
       };

@@ -20,6 +20,7 @@ body {
 }
 
 .sideNav {
+  position: relative;
   padding: 0px;
   color: #ffffff;
   width: 18%;
@@ -129,6 +130,8 @@ body {
 }
 
 .navBottomText {
+  position: absolute;
+  bottom: 0;
   padding: 30px;
   display: flex;
   align-items: center;
@@ -136,6 +139,10 @@ body {
   font-size: 30px;
   font-family: "Poller One", cursive;
   margin-top: calc(30% - 50px);
+}
+
+.navBottomText i {
+  margin-left: 30px;
 }
 
 .optionNumber {
@@ -196,7 +203,7 @@ body {
   background-color: #eaf0f3;
   padding: 5px 10px;
   border-radius: 20px;
-  width: 50%;
+  width: 40%;
   height: 25px;
   margin-bottom: 10px;
 }
@@ -426,14 +433,14 @@ tbody tr td:first-child {
 /* User details section */
 
 .rowDetailContainer {
-  height: 85vh;
+  position: fixed;
+  height: calc(100% - 66px);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   z-index: 1000;
-  position: absolute;
   right: 0px;
-  width: 30%;
+  width: 25%;
   opacity: 0px;
-  top: -17px;
+  top: 34px;
   background-color: #ffffff;
   margin-top: 19px;
   padding: 15px;
@@ -808,4 +815,33 @@ tbody tr td:first-child {
 
 .rowDetailContainer {
   transition: 0.2s ease-in;
+}
+
+.nameCell {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.chatBubble {
+  position: fixed;
+  right: 50;
+  font-size: 40px;
+  background-color: #ff3465;
+  padding: 10px;
+  border-radius: 50%;
+  bottom: 50;
+  z-index: 10001;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.questionMarkTop {
+  background-color: #939798;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 15px !important;
+  text-align: center;
+  margin-bottom: 5px;
+  padding: 6px 4px 3px 4px;
 }

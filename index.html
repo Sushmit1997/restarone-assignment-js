@@ -133,7 +133,7 @@
               <li><i class="bx bx-plus"></i></li>
               <li class="notificationBell"><i class="bx bxs-bell"></i> <span class="notificationCount">47</span></li>
               <li><div class="userAlphabet">P</div></i></li>
-              <li><i class='bx bx-question-mark'></i></li>
+              <li class="questionMarkTop"><i class='bx bx-question-mark'></i></li>
             </ul>
           </div>
         </div>
@@ -152,12 +152,12 @@
                         <li><i class='bx bx-filter'></i> <span class="filterText">Filters</span> </li>
                     </ul>
                 </div>
-                <div style="display:none" class="rowDetailContainer">
+                <div  class="rowDetailContainer">
                   <div class="rowDetailIcons">
                       <div><i onclick="onCloseArrowClick()" class='bx bx-right-arrow-alt' ></i></div>
                       <div>
                         <ul>
-                          <li><i class='bx bx-mail-send' ></i></li>
+                          <li><i class='bx bx-link-external'></i></li>
                           <li><i class='bx bx-star'></i></li>
                           <li><i class="bx bx-dots-vertical-rounded"></i></li>
                       </ul>
@@ -187,7 +187,7 @@
                     </div>
                     <div class="userCompanyDetail">
                       <div class="userCompanyLabel">Company </div>
-                      <span class="name">Facebook</span>
+                      <span class="name userDetailCompany">Facebook</span>
                     </div>
 
                     <div class="userTitleDetail">
@@ -196,11 +196,11 @@
                     </div>
                     <div class="userEmailDetail">
                       <div class="userEmailLabel"> <span>Work Email <i class='bx bxs-chevron-down' ></i> </span> </div>
-                      <span class="name">zealmaker1@gmail.com</span>
+                      <span class="name userDetailPhone">zealmaker1@gmail.com</span>
                     </div>
                     <div class="userPhoneDetail">
                       <div class="userPhoneLabel"> <span>Work Phone <i class='bx bxs-chevron-down' ></i> </span> </div>
-                      <span class="name">9813058280</span>
+                      <span class="name ">9813058280</span>
                     </div>
   
                     <div class="userRatingDetail">
@@ -256,7 +256,7 @@
                     <tbody>
                         <tr  onclick="addRowHandlers()">
                             <td class="firstColumn"><span class="nameInitials">MJ</span></td>
-                            <td><div class="nameCell">Michael Jordan</div></td>
+                            <td><div class="nameCell"> <span>Michael Jordan</span> <i class='bx bx-link-external'></i></div> </td>
                             <td>Chicago Bulls</td>
                             <td>-</td>
                             <td>mike@gmail.com</td>
@@ -267,10 +267,10 @@
                         </tr>
                         <tr  onclick="addRowHandlers()">
                             <td><span class="nameInitials">KB</span></td>
-                            <td><div class="nameCell">Kobe Bryant</div></td>
+                            <td>Kobe Bryant</td>
                             <td>The Lakers</td>
                             <td>-</td>
-                            <td>mike@gmail.com</td>
+                            <td>kobe@gmail.com</td>
                             <td>David Da Silva</td>
                             <td>Kuleshwor</td>
                             <td>10/19/2021</td>
@@ -281,7 +281,7 @@
                             <td><div class="nameCell">Lionel Messi</div></td>
                             <td>FC Barcelona</td>
                             <td>-</td>
-                            <td>mike@gmail.com</td>
+                            <td>goat@gmail.com</td>
                             <td>David Da Silva</td>
                             <td>Kuleshwor</td>
                             <td>10/19/2021</td>
@@ -292,7 +292,7 @@
                             <td><div class="nameCell">John Cena</div></td>
                             <td>WWE</td>
                             <td>-</td>
-                            <td>mike@gmail.com</td>
+                            <td>youcantseeme@gmail.com</td>
                             <td>David Da Silva</td>
                             <td>Kuleshwor</td>
                             <td>10/19/2021</td>
@@ -303,7 +303,7 @@
                             <td><div class="nameCell">Randy Orton</div></td>
                             <td>WWE</td>
                             <td>-</td>
-                            <td>mike@gmail.com</td>
+                            <td>rko@gmail.com</td>
                             <td>David Da Silva</td>
                             <td>Kuleshwor</td>
                             <td>10/19/2021</td>
@@ -314,7 +314,7 @@
                             <td><div class="nameCell">Tom Cruise</div></td>
                             <td>Burj Khalifa</td>
                             <td>-</td>
-                            <td>mike@gmail.com</td>
+                            <td>impossible@gmail.com</td>
                             <td>David Da Silva</td>
                             <td>Kuleshwor</td>
                             <td>10/19/2021</td>
@@ -325,7 +325,7 @@
                             <td><div class="nameCell">Michael Jackson</div></td>
                             <td>Theatre</td>
                             <td>-</td>
-                            <td>mike@gmail.com</td>
+                            <td>thriller@gmail.com</td>
                             <td>David Da Silva</td>
                             <td>Kuleshwor</td>
                             <td>10/19/2021</td>
@@ -336,7 +336,9 @@
 
             </div>
         </div>
+        <div class="chatBubble"><i class='bx bx-conversation' ></i> </div>
       </div>
+
     </div>
     
     <script src="index.js"></script>
