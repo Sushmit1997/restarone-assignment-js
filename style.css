@@ -437,13 +437,14 @@ tbody tr td:first-child {
   height: calc(100% - 66px);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   z-index: 1000;
-  right: 0px;
-  width: 25%;
+  right: -26px;
+  width: 0px;
   opacity: 0px;
   top: 34px;
   background-color: #ffffff;
   margin-top: 19px;
-  padding: 15px;
+  padding: 15px 25px 15px 15px;
+  transition: 10s ease-in-out;
 }
 
 .rowDetailIcons {
@@ -453,6 +454,7 @@ tbody tr td:first-child {
   align-items: center;
   font-size: 30px;
   margin-bottom: 10px;
+  margin-right: 18px;
 }
 
 .rowDetailIcons i {
@@ -460,8 +462,8 @@ tbody tr td:first-child {
 }
 
 .rowDetailIcons i:hover {
-  color: #1e3092;
-  transition: 0.1s ease-in;
+  color: #2b41b2;
+  transition: 0.2s ease-in;
 }
 
 .rowDetailIcons div:last-child ul {

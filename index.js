@@ -1,9 +1,20 @@
+const userDetailDiv = document.querySelector(".rowDetailContainer");
+
 const onCloseArrowClick = () => {
-  $(".rowDetailContainer").animate({ width: "toggle" }, 300);
+  userDetailDiv.style.width = "0px";
+  setTimeout(() => {
+    userDetailDiv.style.display = "none";
+  }, 200);
 };
 
 function addRowHandlers() {
-  $(".rowDetailContainer").css("display", "block").show();
+  setTimeout(() => {
+    userDetailDiv.style.display = "block";
+  }, 50);
+
+  setTimeout(() => {
+    userDetailDiv.style.width = "400px";
+  }, 70);
 
   var table = document.getElementById("tableId");
   var rows = table.getElementsByTagName("tr");
@@ -28,7 +39,12 @@ function addRowHandlers() {
         document.querySelector(".userDetailCompany").innerHTML = companyName;
         document.querySelector(".userDetailPhone").innerHTML = workEmail;
 
-        $(".rowDetailContainer").css("display", "block");
+        setTimeout(() => {
+          userDetailDiv.style.display = "block";
+        }, 50);
+        setTimeout(() => {
+          userDetailDiv.style.width = "400px";
+        }, 70);
       };
     };
     currentRow.onclick = createClickHandler(currentRow);
