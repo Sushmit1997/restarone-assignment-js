@@ -443,7 +443,7 @@ tbody tr td:first-child {
   top: 34px;
   background-color: #ffffff;
   margin-top: 19px;
-  padding: 15px 25px 15px 15px;
+  padding: 15px 25px 15px 0px;
   transition: 10s ease-in-out;
 }
 
@@ -452,13 +452,20 @@ tbody tr td:first-child {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 30px;
+  font-size: 20px;
   margin-bottom: 10px;
   margin-right: 18px;
+  padding-left: 15px;
 }
 
 .rowDetailIcons i {
   cursor: pointer;
+  color: #6e7072;
+  font-size: 25px;
+}
+
+.bx-right-arrow-alt {
+  font-size: 30px !important;
 }
 
 .rowDetailIcons i:hover {
@@ -479,6 +486,7 @@ tbody tr td:first-child {
 .rowDetailUserInfo {
   display: flex;
   align-items: center;
+  padding-left: 15px;
 }
 
 .userDetailContainer {

@@ -1,6 +1,7 @@
 const userDetailDiv = document.querySelector(".rowDetailContainer");
 
 const onCloseArrowClick = () => {
+  // Setting width 0px before setting display none.
   userDetailDiv.style.width = "0px";
   setTimeout(() => {
     userDetailDiv.style.display = "none";
@@ -8,6 +9,7 @@ const onCloseArrowClick = () => {
 };
 
 function addRowHandlers() {
+  // Setting display to block before increasing width
   setTimeout(() => {
     userDetailDiv.style.display = "block";
   }, 50);
@@ -39,6 +41,7 @@ function addRowHandlers() {
         document.querySelector(".userDetailCompany").innerHTML = companyName;
         document.querySelector(".userDetailPhone").innerHTML = workEmail;
 
+        // Setting display to block before increasing width
         setTimeout(() => {
           userDetailDiv.style.display = "block";
         }, 50);
