@@ -153,7 +153,7 @@
                 </div>
                 <div class="rowDetailContainer">
                   <div class="rowDetailIcons">
-                      <div><i class='bx bx-right-arrow-alt' ></i></div>
+                      <div><i onclick="onCloseArrowClick()" class='bx bx-right-arrow-alt' ></i></div>
                       <div>
                         <ul>
                           <li><i class='bx bx-mail-send' ></i></li>
@@ -171,10 +171,73 @@
                       <span>Test company</span>
                     </div>
                   </div>
+                  <div class="tabsContainer">
+                    <ul>
+                      <li>DETAILS</li>
+                      <li>ACTIVITY</li>
+                      <li>RELATED</li>
+                      
+                    </ul>
+                  </div>
+                  <div class="userDetailContainer">
+                    <div class="userNameDetail">
+                      <div class="userNameLabel"><span>Name <i class='bx bxs-circle' ></i> </span><i class='bx bx-copy'></i></div>
+                      <span class="name">Michael Jordan</span>
+                    </div>
+                    <div class="userCompanyDetail">
+                      <div class="userCompanyLabel">Company </div>
+                      <span class="name">Facebook</span>
+                    </div>
+
+                    <div class="userTitleDetail">
+                      <div class="userTitleLabel">Title </div>
+                      <span class="name">Add title</span>
+                    </div>
+                    <div class="userEmailDetail">
+                      <div class="userEmailLabel"> <span>Work Email <i class='bx bxs-chevron-down' ></i> </span> </div>
+                      <span class="name">zealmaker1@gmail.com</span>
+                    </div>
+                    <div class="userPhoneDetail">
+                      <div class="userPhoneLabel"> <span>Work Phone <i class='bx bxs-chevron-down' ></i> </span> </div>
+                      <span class="name">9813058280</span>
+                    </div>
+  
+                    <div class="userRatingDetail">
+                      <div class="userRatingLabel"> <span>Rating </span> </div>
+                      <div class="name"><span >- Select Rating -</span><i class='bx bxs-chevron-down' ></i> </div> 
+                    </div>
+
+                    <div class="userStatusDetail">
+                      <div class="userStatusLabel"> <span>Status </span> </div>
+                      <div class="name"><span >- Select Status -</span><i class='bx bxs-chevron-down' ></i> </div> 
+                    </div>
+                    <div class="userRecycledDetail">
+                      <div class="userRecycledLabel"> <span>Status </span> </div>
+                      <div class="name"><span >- Select Status -</span><i class='bx bxs-chevron-down' ></i> </div> 
+                    </div>
+                    <div class="userOwnerDetail">
+                      <div class="userOwnerLabel"> <span>Owner </span> </div>
+                      <div class="name"><span >David Da Silva</span><i class='bx bx-plus' ></i> </div> 
+                    </div>
+                    <div class="userAssigneeDetail">
+                      <div class="userAssigneeLabel"> <span>AE Assignee </span> </div>
+                      <div class="name"><span >- Select AE Assignee -</span><i class='bx bxs-chevron-down' ></i> </div> 
+                    </div>
+                    <div class="userAccountOwnerDetail">
+                      <div class="userAccountOwnerLabel"> <span>Account Owner </span> </div>
+                      <div class="name"><i class='bx bxs-check-square' ></i> </div> 
+                    </div>
+                    <div class="userCompanySizeDetail">
+                      <div class="userCompanySizeLabel"> <span>Company Size <i class="bx bx-lock"></i> </span> </div>
+                      <div class="name">100+ </div> 
+                    </div>
+                  </div>
+             
+
               </div>
             </div>
             <div class="tableComponentContainer">
-                <table class="tableContent">
+                <table id="tableId" class="tableContent">
                     <thead>
                         <tr>
                             <th><input type="checkbox"></th>
@@ -190,7 +253,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr onclick="addRowHandlers()">
                             <td class="firstColumn"><span class="nameInitials">MJ</span></td>
                             <td><div class="nameCell">Michael Jordan</div></td>
                             <td>Facebook</td>
@@ -274,5 +337,6 @@
         </div>
       </div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>

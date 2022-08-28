@@ -418,14 +418,18 @@ tbody tr td:first-child {
 /* User details section */
 
 .rowDetailContainer {
+  height: 85vh;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  z-index: 1000;
   position: absolute;
   right: 0px;
   width: 30%;
   opacity: 0px;
-  top: -10px;
+  top: -17px;
   background-color: #ffffff;
   margin-top: 19px;
-  padding: 10px;
+  padding: 15px;
+  overflow: scroll;
 }
 
 .rowDetailIcons {
@@ -434,6 +438,15 @@ tbody tr td:first-child {
   justify-content: space-between;
   align-items: center;
   font-size: 30px;
+}
+
+.rowDetailIcons i {
+  cursor: pointer;
+}
+
+.rowDetailIcons i:hover {
+  color: #1e3092;
+  transition: 0.1s ease-in;
 }
 
 .rowDetailIcons div:last-child ul {
@@ -458,7 +471,314 @@ tbody tr td:first-child {
 }
 
 .rowDetailUserName {
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   margin-left: 15px;
 }
+
+.rowDetailUserName span:first-child {
+  font-size: 20px;
+}
+
+.tabsContainer ul {
+  padding-left: 0px;
+  list-style: none;
+  display: flex;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.tabsContainer ul li {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 20px;
+  width: 25%;
+  text-align: center;
+}
+
+.tabsContainer ul li:hover {
+  border-bottom: 2px solid #2b41b2;
+  padding: 20px;
+  transition: 0.1s ease-in;
+  cursor: pointer;
+}
+
+.tabsContainer ul li:first-child {
+  border-bottom: 2px solid #2b41b2;
+  padding: 20px;
+}
+
+/* User details section */
+
+.userDetailContainer {
+  padding: 0px 20px;
+}
+
+.userNameDetail .userNameLabel span {
+  color: #6e7072;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.userNameDetail .userNameLabel span i {
+  color: #b50814;
+  font-size: 6px;
+  margin-bottom: 10px;
+  position: absolute;
+  right: -9px;
+  top: 4px;
+}
+
+.userNameDetail .userNameLabel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.userNameDetail .name {
+  font-size: 18px;
+}
+
+/* User company detail */
+
+.userCompanyDetail {
+  margin-top: 25px;
+}
+
+.userCompanyDetail .userCompanyLabel {
+  color: #6e7072;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.userCompanyDetail .name {
+  font-size: 18px;
+  color: #2b41b2;
+  font-weight: 500;
+}
+
+/* User title detail */
+
+.userTitleDetail {
+  margin-top: 25px;
+}
+
+.userTitleDetail .userTitleLabel {
+  color: #6e7072;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.userTitleDetail .name {
+  font-size: 18px;
+  color: #918e97;
+  font-weight: 500;
+}
+
+/* User email detail */
+
+.userEmailDetail {
+  margin-top: 25px;
+}
+
+.userEmailDetail .userEmailLabel {
+  color: #6e7072;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.userEmailDetail .name {
+  font-size: 18px;
+  color: #2b41b2;
+  font-weight: 500;
+}
+
+/* User phone detail */
+
+.userPhoneDetail {
+  margin-top: 25px;
+}
+
+.userPhoneDetail .userPhoneLabel {
+  color: #6e7072;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.userPhoneDetail .name {
+  font-size: 18px;
+  color: #2b41b2;
+  font-weight: 500;
+}
+
+/* User rating detail */
+
+.userRatingDetail {
+  margin-top: 25px;
+}
+
+.userRatingDetail .userRatingLabel {
+  color: #6e7072;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.userRatingDetail .name {
+  font-size: 18px;
+  color: #0b0c0c;
+  font-weight: 500;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* User status detail */
+
+.userStatusDetail {
+  margin-top: 25px;
+}
+
+.userStatusDetail .userStatusLabel {
+  color: #6e7072;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.userStatusDetail .name {
+  font-size: 18px;
+  color: #0b0c0c;
+  font-weight: 500;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* User status detail */
+
+.userRecycledDetail {
+  margin-top: 25px;
+}
+
+.userRecycledDetail .userRecycledLabel {
+  color: #6e7072;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.userRecycledDetail .name {
+  font-size: 18px;
+  color: #0b0c0c;
+  font-weight: 500;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* User owner detail */
+
+.userOwnerDetail {
+  margin-top: 25px;
+}
+
+.userOwnerDetail .userOwnerLabel {
+  color: #6e7072;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.userOwnerDetail .name {
+  font-size: 18px;
+  color: #2b41b2;
+  font-weight: 500;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* User assignee detail */
+
+.userAssigneeDetail {
+  margin-top: 25px;
+}
+
+.userAssigneeDetail .userAssigneeLabel {
+  color: #6e7072;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.userAssigneeDetail .name {
+  font-size: 18px;
+  color: #0b0c0c;
+  font-weight: 500;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* User assignee detail */
+
+.userAccountOwnerDetail {
+  margin-top: 25px;
+}
+
+.userAccountOwnerDetail .userAccountOwnerLabel {
+  color: #6e7072;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.userAccountOwnerDetail .name {
+  font-size: 25px;
+  color: #2b41b2;
+  font-weight: 500;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* User company size detail */
+
+.userCompanySizeDetail {
+  margin-top: 25px;
+}
+
+.userCompanySizeDetail .userCompanySizeLabel {
+  color: #6e7072;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.userCompanySizeDetail .name {
+  font-size: 18px;
+  color: #0b0c0c;
+  font-weight: 500;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* CSS transitions */
