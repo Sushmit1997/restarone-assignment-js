@@ -15,6 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Poller+One&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="favico.ico" type="image/x-icon">  
   </head>
   <body>
     <div class="pageContainer">
@@ -151,7 +152,7 @@
                         <li><i class='bx bx-filter'></i> <span class="filterText">Filters</span> </li>
                     </ul>
                 </div>
-                <div class="rowDetailContainer">
+                <div style="display:none" class="rowDetailContainer">
                   <div class="rowDetailIcons">
                       <div><i onclick="onCloseArrowClick()" class='bx bx-right-arrow-alt' ></i></div>
                       <div>
@@ -167,8 +168,8 @@
                         MJ
                     </div>
                     <div class="rowDetailUserName">
-                      <span>Michael Jordan</span>
-                      <span>Test company</span>
+                      <span class="userDetailNameTop">Michael Jordan</span>
+                      <span class="userDetailCompanyTop">Test company</span>
                     </div>
                   </div>
                   <div class="tabsContainer">
@@ -182,7 +183,7 @@
                   <div class="userDetailContainer">
                     <div class="userNameDetail">
                       <div class="userNameLabel"><span>Name <i class='bx bxs-circle' ></i> </span><i class='bx bx-copy'></i></div>
-                      <span class="name">Michael Jordan</span>
+                      <span class="name userDetailName">Michael Jordan</span>
                     </div>
                     <div class="userCompanyDetail">
                       <div class="userCompanyLabel">Company </div>
@@ -253,10 +254,10 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr onclick="addRowHandlers()">
+                        <tr  onclick="addRowHandlers()">
                             <td class="firstColumn"><span class="nameInitials">MJ</span></td>
                             <td><div class="nameCell">Michael Jordan</div></td>
-                            <td>Facebook</td>
+                            <td>Chicago Bulls</td>
                             <td>-</td>
                             <td>mike@gmail.com</td>
                             <td>David Da Silva</td>
@@ -264,10 +265,10 @@
                             <td>10/19/2021</td>
                             <td>10/19/2021</td>
                         </tr>
-                        <tr>
-                            <td><span class="nameInitials">MJ</span></td>
-                            <td><div class="nameCell">Michael Jordan</div></td>
-                            <td>Facebook</td>
+                        <tr  onclick="addRowHandlers()">
+                            <td><span class="nameInitials">KB</span></td>
+                            <td><div class="nameCell">Kobe Bryant</div></td>
+                            <td>The Lakers</td>
                             <td>-</td>
                             <td>mike@gmail.com</td>
                             <td>David Da Silva</td>
@@ -275,10 +276,10 @@
                             <td>10/19/2021</td>
                             <td>10/19/2021</td>
                         </tr>
-                        <tr>
-                            <td><span class="nameInitials">MJ</span></td>
-                            <td><div class="nameCell">Michael Jordan</div></td>
-                            <td>Facebook</td>
+                        <tr onclick="addRowHandlers()">
+                            <td><span class="nameInitials">LM</span></td>
+                            <td><div class="nameCell">Lionel Messi</div></td>
+                            <td>FC Barcelona</td>
                             <td>-</td>
                             <td>mike@gmail.com</td>
                             <td>David Da Silva</td>
@@ -286,10 +287,10 @@
                             <td>10/19/2021</td>
                             <td>10/19/2021</td>
                         </tr>
-                        <tr>
-                            <td><span class="nameInitials">MJ</span></td>
-                            <td><div class="nameCell">Michael Jordan</div></td>
-                            <td>Facebook</td>
+                        <tr onclick="addRowHandlers()">
+                            <td><span class="nameInitials">JC</span></td>
+                            <td><div class="nameCell">John Cena</div></td>
+                            <td>WWE</td>
                             <td>-</td>
                             <td>mike@gmail.com</td>
                             <td>David Da Silva</td>
@@ -297,10 +298,10 @@
                             <td>10/19/2021</td>
                             <td>10/19/2021</td>
                         </tr>
-                        <tr>
-                            <td><span class="nameInitials">MJ</span></td>
-                            <td><div class="nameCell">Michael Jordan</div></td>
-                            <td>Facebook</td>
+                        <tr onclick="addRowHandlers()">
+                            <td><span class="nameInitials">RO</span></td>
+                            <td><div class="nameCell">Randy Orton</div></td>
+                            <td>WWE</td>
                             <td>-</td>
                             <td>mike@gmail.com</td>
                             <td>David Da Silva</td>
@@ -308,10 +309,10 @@
                             <td>10/19/2021</td>
                             <td>10/19/2021</td>
                         </tr>
-                        <tr>
-                            <td><span class="nameInitials">MJ</span></td>
-                            <td><div class="nameCell">Michael Jordan</div></td>
-                            <td>Facebook</td>
+                        <tr onclick="addRowHandlers()">
+                            <td><span class="nameInitials">TC</span></td>
+                            <td><div class="nameCell">Tom Cruise</div></td>
+                            <td>Burj Khalifa</td>
                             <td>-</td>
                             <td>mike@gmail.com</td>
                             <td>David Da Silva</td>
@@ -319,10 +320,10 @@
                             <td>10/19/2021</td>
                             <td>10/19/2021</td>
                         </tr>
-                        <tr>
+                        <tr onclick="addRowHandlers()">
                             <td><span class="nameInitials">MJ</span></td>
-                            <td><div class="nameCell">Michael Jordan</div></td>
-                            <td>Facebook</td>
+                            <td><div class="nameCell">Michael Jackson</div></td>
+                            <td>Theatre</td>
                             <td>-</td>
                             <td>mike@gmail.com</td>
                             <td>David Da Silva</td>
@@ -337,6 +338,13 @@
         </div>
       </div>
     </div>
+    
     <script src="index.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"></script>
   </body>
+
+
 </html>

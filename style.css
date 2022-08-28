@@ -383,6 +383,14 @@ thead tr th:hover {
 table {
   border-collapse: collapse;
 }
+tbody tr {
+  cursor: pointer;
+}
+
+tbody tr:hover {
+  background-color: #edefef;
+  transition: 0.1s ease-in;
+}
 
 tbody tr,
 thead tr {
@@ -429,7 +437,6 @@ tbody tr td:first-child {
   background-color: #ffffff;
   margin-top: 19px;
   padding: 15px;
-  overflow: scroll;
 }
 
 .rowDetailIcons {
@@ -438,6 +445,7 @@ tbody tr td:first-child {
   justify-content: space-between;
   align-items: center;
   font-size: 30px;
+  margin-bottom: 10px;
 }
 
 .rowDetailIcons i {
@@ -464,10 +472,15 @@ tbody tr td:first-child {
   align-items: center;
 }
 
+.userDetailContainer {
+  overflow-y: scroll;
+  height: 72%;
+}
+
 .rowDetailUserInitials {
   background-color: #dce3e6;
   padding: 10px;
-  border-radius: 50%;
+  border-radius: 60%;
 }
 
 .rowDetailUserName {
@@ -782,3 +795,17 @@ tbody tr td:first-child {
 }
 
 /* CSS transitions */
+
+/* Footer */
+
+.footer {
+  margin-top: -100px;
+}
+
+.footer .navBottomText {
+  background-color: #311d40;
+}
+
+.rowDetailContainer {
+  transition: 0.2s ease-in;
+}
